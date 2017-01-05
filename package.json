@@ -1,0 +1,39 @@
+{
+  "name": "stefaan.de",
+  "version": "1.0.0",
+  "description": "CV of Stefan Löhers",
+  "author": "Stefan Löhers",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tutorial-test": "gulp main"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "devDependencies": {
+    "babel-loader": "^6.2.10",
+    "babel-preset-latest": "^6.16.0",
+    "browser-sync": "^2.18.5",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-if": "^2.0.2",
+    "gulp-image-resize": "^0.11.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-util": "^3.0.8",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.20.0"
+  }
+}

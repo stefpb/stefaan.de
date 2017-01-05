@@ -1,0 +1,35 @@
+.info {
+	ul.info-list {
+		border:1px solid #efefef;
+		text-align:center;
+
+		li {
+			border-bottom:1px solid #efefef;
+			background:#fafafa;
+			font-size:14px;
+
+			.inf, .value {
+				display:inline-block;
+				padding:8px 0;
+			}
+
+			.inf {
+				width:35%;
+				background:#ffffff;
+				left: -1px;
+				position: relative;
+				border-right:1px solid #efefef;
+				color:#333333;
+			}
+
+			.value {
+				width:63%;
+				color:#666666;
+			}
+
+			&:last-child{
+				border-bottom:none;
+			}
+		}
+	}
+}

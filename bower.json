@@ -1,0 +1,28 @@
+{
+  "name": "stefaan.de",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Stefan Löhers <stefan@novemo.de>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "apache-server-configs": "^2.14.0",
+    "bootstrap": "v4.0.0-alpha.5",
+    "jquery": "^3.1.0",
+    "jquery-form": "https://github.com/malsup/form.git#^3.46.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "open-sans-fontface": "^1.4.2"
+  }
+}
