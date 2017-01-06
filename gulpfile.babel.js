@@ -75,9 +75,16 @@ gulp.task('templates', () => {
 	return gulp.src(paths.template)
 		.pipe(jade({
 			pretty: !production,
-			// locals: middleware
+			locals: {
+				email: "<script>document.write('stefan@novemo.de')</script>"
+			}
 		}))
 		.pipe(gulp.dest(paths.publicDir));
+})
+
+gulp.task('favicon', () => {
+	return gulp.src('./src/favicon/**')
+		.pipe(gulp.dest(paths.assetsDir + 'favicon/'));
 })
 
 gulp.task('resize', () => {
@@ -101,9 +108,6 @@ gulp.task('fonts', () => {
 		.pipe(gulp.dest('public/assets/fonts'))
 })
 
-
-gulp.task('main', ['templates']);
-
 gulp.task('watch', () => {
 	gulp.watch(paths.allScripts, ['scripts']);
 	gulp.watch(paths.allStyles, ['styles']);
@@ -121,6 +125,7 @@ gulp.task('browser-sync', () => {
 });
 
 gulp.task('default', () => {
+	gulp.start('favicon');
 	gulp.start('templates');
 	gulp.start('styles');
 	gulp.start('resize');

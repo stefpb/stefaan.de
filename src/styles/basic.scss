@@ -63,7 +63,7 @@ body {
 			stroke-width: 3.7;
 
 			&.large {
-				stroke: #cd5353;
+				stroke: $primary;
 				stroke-width: 4.3;
 				background:#ffffff;
 				padding: 0 10px;
@@ -101,8 +101,8 @@ a {
 			width: 35px;
 
 			&:hover {
-				border-color: #cd5353;
-				color: #cd5353;
+				border-color: $primary;
+				color: $primary;
 			}
 
 			i.fa {

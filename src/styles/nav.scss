@@ -16,7 +16,7 @@ nav {
 					bottom: 0;
 					left: 0;
 					right: 0;
-					background: #cd5353;
+					background: $primary;
 					transform: scaleX(0);
 					transform-origin: 50%;
 					transition-property: transform;
@@ -31,7 +31,7 @@ nav {
 					}
 				}
 				&.active {
-					background-color: #cd5353;
+					background-color: $primary;
 					color: #fff;
 				}
 

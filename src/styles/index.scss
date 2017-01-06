@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
+$primary: #dbb01a;
 // $OpenSansPath: './assets/fonts';
 
 // @import "../../bower_components/bootstrap/scss/bootstrap-flex.scss";
 @import "../../bower_components/bootstrap/scss/bootstrap.scss";
+
+$fa-font-path: "./fonts";
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
 @import "../../bower_components/open-sans-fontface/open-sans.scss";
 
