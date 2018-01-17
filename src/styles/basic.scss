@@ -2,7 +2,7 @@
 
 body {
 	font-family: 'Ubuntu' !important;
-	background: #efefef;
+	background: #c0392b;
 	font: 14px/22px "Open Sans",Arial,sans-serif;
 	color: #ffffff;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
@@ -48,6 +48,9 @@ a {
 
 .social {
 	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
 	li {
 		margin-right: 2px;
 		text-align: center;
