@@ -36,7 +36,8 @@ const paths = {
 	style: 'src/styles/index.scss',
 	allTemplates: 'src/templates/**/*.jade',
 	template: 'src/templates/index.jade',
-	allPhotos: 'src/photos/**/*.jpg',
+	allPhotos: 'src/photos/**/*',
+	svgs: 'src/logo/**/*',
 	publicDir: 'public/',
 	assetsDir: 'public/assets/',
 	imagesDir: 'public/assets/images/',
@@ -94,7 +95,7 @@ gulp.task('resize', () => {
 			height: 400,
 			upscale: false,
 			// crop: true,
-			format: 'jpg'
+			// format: 'jpg'
 		}))
 		.pipe(imagemin())
 		.pipe(gulp.dest(paths.imagesDir))
@@ -124,6 +125,11 @@ gulp.task('browser-sync', () => {
 	})
 });
 
+gulp.task('copy', () => {
+	gulp.src(paths.svgs)
+		.pipe(gulp.dest(paths.imagesDir))
+})
+
 gulp.task('default', () => {
 	gulp.start('favicon');
 	gulp.start('templates');
@@ -131,6 +137,7 @@ gulp.task('default', () => {
 	gulp.start('resize');
 	gulp.start('scripts');
 	gulp.start('fonts');
+	gulp.start('copy');
 	
 	if (!production) {
 		gulp.start('watch')
