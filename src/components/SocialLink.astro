@@ -1,0 +1,36 @@
+---
+const { url, image } = Astro.props;
+---
+
+<li>
+  <a href={url} target="_blank" rel="noopener">
+    <img src={image} />
+  </a>
+</li>
+
+<style lang="scss">
+  li {
+    margin-right: 2px;
+    text-align: center;
+    display: inline-block;
+
+    a {
+      display: inline-block;
+      border-radius: 100%;
+      border: 2px solid white;
+      // color: #33373d;
+      height: 40px;
+      width: 40px;
+
+      &:hover {
+        border-color: var(--primary);
+        color: var(--primary);
+      }
+
+      img {
+        height: 25px;
+        transform: translateY(-5px);
+      }
+    }
+  }
+</style>
