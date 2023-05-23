@@ -42,7 +42,7 @@ import SocialLink from '../components/SocialLink.astro';
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml" />
     <meta
       name="description"
-      content="Meine Visitenkarte im Netz: Ich bin leidenschaftlicher Full-Stack-Webdeveloper. Meine Lieblingsthemen sind React, Onlineshops, Docker, Kubernetes, Gulp.js und ES6. Dabei stets neue Wege zu gehen ist stets mein größtes Anliegen."
+      content="Meine Visitenkarte im Netz: Ich bin leidenschaftlicher Full-Stack-Webdeveloper. Meine Lieblingsthemen sind React, Onlineshops, Docker und Kubernetes. Dabei stets neue Wege zu gehen ist stets mein größtes Anliegen."
     />
     <link rel="canonical" href="https://stefaan.de/" />
   </head>
@@ -60,6 +60,31 @@ import SocialLink from '../components/SocialLink.astro';
       <div>Stefan Löhers</div>
       <div>&nbsp;</div>
       <div>Webentwickler und Papa</div>
+    </div>
+    <div style="background-image: url(assets/images/opus.png)"></div>
+    <div style="background-color: #56191a">
+      <div>OPUS</div>
+      <div class="logos">
+        <div style="background-image: url(assets/images/kubernetes.png)">Kubernetes</div>
+        <div
+          style="
+          background-image: url(assets/images/vue.js.svg);
+          background-size: 90%;
+          background-position: center 30%;
+        "
+        >
+          Vue.js
+        </div>
+        <div
+          style="
+            background-image: url(assets/images/typescript.svg);
+            background-size: 100% 60%;
+          "
+        >
+          TypeScript
+        </div>
+        <div style="background-image: url(assets/images/webpack.svg)">Webpack</div>
+      </div>
     </div>
     <div style="background-image: url(assets/images/grohe.png)"></div>
     <div style="background-color: #13263a">
@@ -140,7 +165,8 @@ import SocialLink from '../components/SocialLink.astro';
     <div style="background-color: #006eba">
       <div>
         <a href="https://studiengang-bwl.de/" target="_blank" rel="noopener"
-          >studiengang-bwl.de</a>
+          >studiengang-bwl.de</a
+        >
       </div>
       <div class="logos">
         <div style="background-image: url(assets/images/modx.png)">ModX CMS</div>
@@ -215,7 +241,8 @@ import SocialLink from '../components/SocialLink.astro';
     <div style="background-color: #303030">
       <div>
         <a href="https://studienportale.de/" target="_blank" rel="noopener"
-          >studienportale.de</a>
+          >studienportale.de</a
+        >
       </div>
       <div class="logos">
         <div style="background-image: url(assets/images/netlify.png)">netlify</div>
@@ -249,6 +276,11 @@ import SocialLink from '../components/SocialLink.astro';
             url="//www.xing.com/profile/Stefan_Loehers"
             title="XING Profil"
             image="assets/images/xing.svg"
+          />
+          <SocialLink
+            url="https://www.linkedin.com/in/stef2go"
+            title="LinkedIn Profil"
+            image="assets/images/linkedin.svg"
           />
           <SocialLink
             url="//github.com/stefpb"
