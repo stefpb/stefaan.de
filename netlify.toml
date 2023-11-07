@@ -1,5 +1,5 @@
 [build.environment]
-  NODE_VERSION = "18.12.1"
+  NODE_VERSION = "20.8.1"
 
 [build]
   command = "npm run build"
